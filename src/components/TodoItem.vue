@@ -13,7 +13,9 @@ export default {
   name: "TodoItem",
   props: ["todo"],
   methods: {
-    markComplete: () => (this.todo.completed = !this.todo.completed)
+    markComplete() {
+      this.todo.completed = !this.todo.completed;
+    }
   }
 };
 </script>
